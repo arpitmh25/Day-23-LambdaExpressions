@@ -74,16 +74,16 @@ public class UserRegistrationLambda {
                 throw new InvalidUserException("Please enter proper message");
             }
         };
-        firstName.check("^[A-Z]{1}[a-z]{3,}$", "Niharika", "Happy");
-        firstName.check("^[A-Z]{1}[a-z]{3,}$", "niha", "Happy");
-        lastName.check("^[A-Z]{1}[a-z]{3,}$", "Gowda", "Happy");
-        lastName.check("^[A-Z]{1}[a-z]{3,}$", "kv", "Happy");
-        email.check("^[a-zA-Z0-9\\-\\+\\.]+.([a-zA-Z0-9])*@([a-z0-9]+.[a-z]{2,}.([a-z]{2,})?)$", "niharikagowda1196@gmail.com", "Happy");
-        email.check("^[a-zA-Z0-9\\-\\+\\.]+.([a-zA-Z0-9])*@([a-z0-9]+.[a-z]{2,}.([a-z]{2,})?)$", "niha199831#gmail.com", "Happy");
-        phone.check("^[0-9]{2}[ ]?[0-9]{10}$", "917550167198", "Happy");
-        phone.check("^[0-9]{2}[ ]?[0-9]{10}$", "91550167198", "Happy");
-        password.check("^(?=.{8,}$)(?=.*\\d)(?=.*[A-Z])([a-zA-Z0-9]+[\\@\\#\\^])", "niha123A@", "Happy");
-        password.check("^(?=.{8,}$)(?=.*\\d)(?=.*[A-Z])([a-zA-Z0-9]+[\\@\\#\\^])", "niha123A", "Happy");
+       firstName.check("^[A-Z]{1}[a-z]{3,}$", "Arpit", "Happy");
+        firstName.check("^[A-Z]{1}[a-z]{3,}$", "arpi", "Happy");
+        lastName.check("^[A-Z]{1}[a-z]{3,}$", "Patil", "Happy");
+        lastName.check("^[A-Z]{1}[a-z]{3,}$", "pa", "Happy");
+        email.check("^[a-zA-Z0-9\\-\\+\\.]+.([a-zA-Z0-9])*@([a-z0-9]+.[a-z]{2,}.([a-z]{2,})?)$", "arpitmh234@gmail.com", "Happy");
+        email.check("^[a-zA-Z0-9\\-\\+\\.]+.([a-zA-Z0-9])*@([a-z0-9]+.[a-z]{2,}.([a-z]{2,})?)$", "arpitmh253#gmail.com", "Happy");
+        phone.check("^[0-9]{2}[ ]?[0-9]{10}$", "8888888888", "Happy");
+        phone.check("^[0-9]{2}[ ]?[0-9]{10}$", "8888845768", "Happy");
+        password.check("^(?=.{8,}$)(?=.*\\d)(?=.*[A-Z])([a-zA-Z0-9]+[\\@\\#\\^])", "arpit123A@", "Happy");
+        password.check("^(?=.{8,}$)(?=.*\\d)(?=.*[A-Z])([a-zA-Z0-9]+[\\@\\#\\^])", "arpit123A", "Happy");
 
     }
 }
